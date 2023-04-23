@@ -15,19 +15,21 @@ function StudentDetails() {
   return (
     <>
       {showContent ? (
-        <>
-          <div onMouseEnter={handleMouse} onMouseLeave={handleOutMouse}>
-            <div className="student_main main_hover">
-              <div>
-                <p>
-                  DS031221 <img src={upArrow} alt="" />
-                </p>
-                <h3>Data Scientist Program</h3>
-              </div>
+        <div
+          onMouseEnter={handleMouse}
+          onMouseLeave={handleOutMouse}
+          className="student_main0"
+        >
+          <div className="student_main">
+            <div>
+              <p>
+                DS031221 <img src={upArrow} alt="" />
+              </p>
+              <h3>Data Scientist Program</h3>
             </div>
-            <StudentDetailsComponent />
           </div>
-        </>
+          <StudentDetailsComponent />
+        </div>
       ) : (
         <div
           className="student_main"
